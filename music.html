@@ -93,8 +93,15 @@
       songIndex = 0 ;
       
       const nextSong = () =>{
+            songIndex = (songIndex+1)%songs.length;
           loadSong(songs[songIndex]);
-        
+          plauMusic();
+      };
+
+      const prevSong = () =>{
+            songIndex = (songIndex-1+songs.length)%songs.length;
+          loadSong(songs[songIndex]);
+          plauMusic();
       };
 
       next.addEventListener('click', nextSong);

@@ -78,7 +78,8 @@ img {
   background: rgb(32, 32, 32);
   margin-top: 10rem;
   margin-left: 10rem;
-  z-index: 1;
+  z-index: 100;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .music_controls {
