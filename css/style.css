@@ -16,7 +16,7 @@ html {
 .main_div {
   width: 100vw;
   height: 100vh;
-  background-color: #f6f6f6;
+  background-color: #91B2C7;
   display: grid;
   place-items: center;
 }
@@ -75,7 +75,7 @@ img {
   height: 5rem;
   border-radius: 50%;
   position: absolute;
-  background: rgb(32, 32, 32);
+  background: rgb(0, 0, 0);
   margin-top: 10rem;
   margin-left: 10rem;
   z-index: 100;
