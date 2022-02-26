@@ -82,6 +82,11 @@ img {
   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
+/* analyser */
+/* #visualizer_wrapper{
+	text-align: center;
+} */
+
 .music_controls {
   width: 20rem;
   display: flex;
@@ -90,6 +95,137 @@ img {
   margin: auto;
   margin-top: 5rem;
 }
+ 
+/* New Setting added for analyser */
+
+.content,
+.controls {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content:after {
+    /* content: 'Sound Bars Feat. Franks Laboratory'; */
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.controls {
+    height: 40%;
+}
+
+canvas {
+    width: 80%;
+    height: 60%;
+    margin: 50px auto;
+    /* border: 1px solid #fff; */
+    /* filter: blur(10px); */
+}
+
+audio {
+    outline: none;
+    width: 40%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(226, 2, 247);
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: rgb(188, 166, 250);
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: rgb(188, 166, 250);
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-timeline {
+    color: #fff;
+}
+
+.audioupload {
+  
+    position: relative;
+    width: 40%;
+    outline: none;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.audioupload::-webkit-file-upload-button {
+    visibility: hidden;
+} 
+
+.audioupload::before {
+    content: 'MP3';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border-radius: 50%;
+    background-color: turquoise;
+    display: block;
+    padding: 6px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+@media(max-width:768px) {
+    audio {
+        width: 60%;
+    }
+    .audioupload {
+        width: 60%;
+    }
+    .content:after {
+        font-size: 1.5rem;
+    }
+}
+
+audio::-webkit-media-controls-timeline-container {}
+
+audio::-webkit-media-controls-volume-slider-container {}
+
+audio::-webkit-media-controls-volume-slider {}
+
+audio::-webkit-media-controls-seek-back-button {}
+
+audio::-webkit-media-controls-seek-forward-button {}
+
+audio::-webkit-media-controls-fullscreen-button {}
+
+audio::-webkit-media-controls-rewind-button {}
+
+audio::-webkit-media-controls-return-to-realtime-button {}
+
+audio::-webkit-media-controls-toggle-closed-captions-button {}
+
+
+
 
 .music_controls .fa-solid {
   color: #111111;

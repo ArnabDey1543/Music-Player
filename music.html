@@ -23,95 +23,109 @@
           <img src="assets/numb&frozen.jpg" alt="" />
           <div class="disc"></div>
         </div>
-        <audio src="music/Numb&frozen.mp3"></audio>
-
+        
         <div class="music_controls">
           <i class="fa-solid fa-backward-step" id="prev" title="Previous"></i>
           <i class="fa-solid fa-play main_button" id="play" title="Play"></i>
           <i class="fa-solid fa-forward-step" id="next" title="Next"></i>
         </div>
+        <div class="content">
+          <div class="controls">
+            <audio src="music/Numb&frozen.mp3" ></audio>
+            <!-- <input  class="audioupload" accept="audio/*" /> -->
+            <canvas></canvas>
+          </div>
+        </div>
+          <!-- <audio-player
+            title="My cool super long named audio sound"
+            src="music/Numb&frozen.mp3"
+            bar-width="5"
+            bar-gap="2"
+            preload
+            autoplay
+            ></audio-player> -->
+
       </div>
     </div>
-
+<!--
     <script>
-      const music = document.querySelector("audio");
-      const img = document.querySelector("img");
-      const play = document.getElementById("play");
-      const artist = document.getElementById("artist");
-      const title = document.getElementById("title");
-      const prev = document.getElementById("prev");
-      const next = document.getElementById("next");
+      // const music = document.querySelector("audio");
+      // const img = document.querySelector("img");
+      // const play = document.getElementById("play");
+      // const artist = document.getElementById("artist");
+      // const title = document.getElementById("title");
+      // const prev = document.getElementById("prev");
+      // const next = document.getElementById("next");
 
-      const songs = [
-        {
-          name: "Numb&Frozen",
-          title: "Numb & Frozen",
-          artist: "Icy Narco",
-        },
-        {
-          name: "Fantasy",
-          title: "Fantasy",
-          artist: "Bazzi",
-        },
-        {
-          name: "LeaveMeAlone",
-          title: "Leave Me Alone",
-          artist: "NF"
-        },
-      ];
+      // const songs = [
+      //   {
+      //     name: "Numb&Frozen",
+      //     title: "Numb & Frozen",
+      //     artist: "Icy Narco",
+      //   },
+      //   {
+      //     name: "Fantasy",
+      //     title: "Fantasy",
+      //     artist: "Bazzi",
+      //   },
+      //   {
+      //     name: "LeaveMeAlone",
+      //     title: "Leave Me Alone",
+      //     artist: "NF",
+      //   },
+      // ];
 
-      let isPlaying = false;
-      // for play
-      const plauMusic = () => {
-        isPlaying = true;
-        music.play();
-        play.classList.replace("fa-play", "fa-pause");
-        img.classList.add("anime");
-      };
-      // for pause
-      const pauseMusic = () => {
-        isPlaying = false;
-        music.pause();
-        play.classList.replace("fa-pause", "fa-play");
-        img.classList.remove("anime");
-      };
+      // let isPlaying = false;
+      // // for play
+      // const plauMusic = () => {
+      //   isPlaying = true;
+      //   music.play();
+      //   play.classList.replace("fa-play", "fa-pause");
+      //   img.classList.add("anime");
+      // };
+      // // for pause
+      // const pauseMusic = () => {
+      //   isPlaying = false;
+      //   music.pause();
+      //   play.classList.replace("fa-pause", "fa-play");
+      //   img.classList.remove("anime");
+      // };
 
-      play.addEventListener("click", () => {
-        // if(isPlaying){
-        //     pauseMusic();
-        // }
-        // else{
-        //     plauMusic();
-        // }
-        isPlaying ? pauseMusic() : plauMusic();
-      });
+      // play.addEventListener("click", () => {
+      //   // if(isPlaying){
+      //   //     pauseMusic();
+      //   // }
+      //   // else{
+      //   //     plauMusic();
+      //   // }
+      //   isPlaying ? pauseMusic() : plauMusic();
+      // });
 
+      // //   changing the music data
+      // const loadSong = (songs) => {
+      //   title.textContent = songs.title;
+      //   artist.textContent = songs.artist;
+      //   music.src = `music/${songs.name}.mp3`;
+      //   img.src = `assets/${songs.name}.jpg`;
+      // };
 
-      //   changing the music data
-      const loadSong = (songs) => {
-        title.textContent = songs.title;
-        artist.textContent = songs.artist;
-        music.src = `music/${songs.name}.mp3`;
-        img.src = `assets/${songs.name}.jpg`;
-      };
+      // songIndex = 0;
 
-      songIndex = 0 ;
-      
-      const nextSong = () =>{
-            songIndex = (songIndex+1)%songs.length;
-          loadSong(songs[songIndex]);
-          plauMusic();
-      };
+      // const nextSong = () => {
+      //   songIndex = (songIndex + 1) % songs.length;
+      //   loadSong(songs[songIndex]);
+      //   plauMusic();
+      // };
 
-      const prevSong = () =>{
-            songIndex = (songIndex-1+songs.length)%songs.length;
-          loadSong(songs[songIndex]);
-          plauMusic();
-      };
+      // const prevSong = () => {
+      //   songIndex = (songIndex - 1 + songs.length) % songs.length;
+      //   loadSong(songs[songIndex]);
+      //   plauMusic();
+      // };
 
-      next.addEventListener('click', nextSong);
-      prev.addEventListener('click', prevSong);
-
-    </script>
+      // next.addEventListener("click", nextSong);
+      // prev.addEventListener("click", prevSong);
+    </script> -->
+    <script src="./main.js"></script>
   </body>
 </html>
