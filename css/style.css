@@ -82,10 +82,7 @@ img {
   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
-/* analyser */
-/* #visualizer_wrapper{
-	text-align: center;
-} */
+
 
 .music_controls {
   width: 20rem;
@@ -96,7 +93,7 @@ img {
   margin-top: 5rem;
 }
  
-/* New Setting added for analyser */
+/* New Setting for analyser */
 
 .content,
 .controls {
@@ -110,7 +107,6 @@ img {
 }
 
 .content:after {
-    /* content: 'Sound Bars Feat. Franks Laboratory'; */
     position: absolute;
     color: #fff;
     font-size: 3rem;
