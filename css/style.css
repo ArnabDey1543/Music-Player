@@ -23,7 +23,7 @@ html {
 
 .music_container {
   width: 35rem;
-  height: 55rem;
+  height: 62rem;
   background-color: #ffffff;
   border-radius: 2rem;
   box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -91,6 +91,7 @@ img {
   align-items: center;
   margin: auto;
   margin-top: 5rem;
+  z-index: 210;
 }
  
 /* New Setting for analyser */
@@ -99,7 +100,8 @@ img {
 .controls {
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    /* height: 2vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,12 +116,14 @@ img {
 }
 
 .controls {
-    height: 40%;
+    /* height: 40%; */
+    height: 8vh;
 }
 
 canvas {
     width: 80%;
-    height: 60%;
+    /* height: 60%; */
+    height: 13vh;
     margin: 50px auto;
     /* border: 1px solid #fff; */
     /* filter: blur(10px); */
