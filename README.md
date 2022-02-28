@@ -8,4 +8,4 @@ Created a beautiful UI to play music stored in the "music folder" using the  HTM
 * Html
 * Css
 * JavaScript
->>>>>>> 7a5f621e61a1360082985096537c7b617a122c41
+
